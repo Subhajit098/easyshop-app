@@ -1,4 +1,6 @@
 data "aws_ami" "os_image" {
+
+  // is Canonical’s official AWS account ID
   owners = ["099720109477"]
   most_recent = true
   filter {
@@ -13,7 +15,7 @@ data "aws_ami" "os_image" {
 
 resource "aws_key_pair" "deployer" {
   key_name   = "terra-automate-key"
-  public_key = file("terra-key.pub")
+  public_key = file("./terra-key.pub")
 }
 
 resource "aws_default_vpc" "default" {

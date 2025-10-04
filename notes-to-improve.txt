@@ -1,0 +1,1 @@
+1) For the ec2 instances of worker nodes of k8s cluster, we need to give them proper names in the eks cluster terraform file.
