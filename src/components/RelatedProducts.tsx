@@ -13,7 +13,7 @@ const RelatedProducts = async ({
   shop_category,
 }: RelatedProductsProps) => {
   const res = await fetchData.get(`/products/${shop_category}/${category}`, {
-    limit: "5",
+    limit: "7",
   });
 
   const products: AllProduct[] = res.data.products || [];
