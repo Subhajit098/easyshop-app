@@ -1,1 +1,8 @@
 1) For the ec2 instances of worker nodes of k8s cluster, we need to give them proper names in the eks cluster terraform file.
+2) To destroy only EKS cluster made using the EKS module : 
+terraform destroy -target=module.eks
+
+3) To recreate the cluster as it was previous from scratch ; 
+terraform apply -target=module.eks
+
+4) For now not adding the TLS issuer in kubernetes folder
