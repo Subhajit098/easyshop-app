@@ -16,6 +16,8 @@ type BannerSliderProps = {
   className?: string;
 };
 
+console.log("hello");
+
 const BannerSlider = ({ bannerImages, className }: BannerSliderProps) => {
   return (
     <div className={cn("container mt-10", className)}>
